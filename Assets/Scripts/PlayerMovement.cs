@@ -39,8 +39,8 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate() // FixedUpdate is better for synchronization physics and movement
     {
         // Player movement
-        float moveX = Input.GetAxis("Horizontal");
-        float moveZ = Input.GetAxis("Vertical");
+        float moveX = -Input.GetAxis("Horizontal");
+        float moveZ = -Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
         rb.MovePosition(rb.position + move * speed * Time.fixedDeltaTime);
