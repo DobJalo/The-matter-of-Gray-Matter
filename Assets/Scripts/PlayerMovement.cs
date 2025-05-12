@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 0.2f;
+    public float speed = 2;
     public float lookSpeedX = 2f;
     public float lookSpeedY = 2f;
 
@@ -15,6 +15,14 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject MenuObject;
     private bool moveAround = false;
+
+    public Camera playerCamera;
+
+    //jumping
+    public float jumpForce = 5f;
+    public LayerMask groundLayer;
+    public float groundCheckDistance = 0.1f;
+    private bool isGrounded;
 
     void Start()
     {
@@ -33,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-         
+
     }
 
     void FixedUpdate() // FixedUpdate is better for synchronization physics and movement
@@ -48,6 +56,28 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        //Running
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speed = 5;
+            playerCamera.fieldOfView = 62;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speed = 2;
+            playerCamera.fieldOfView = 60;
+        }
+
+        //Jumping
+        isGrounded = Physics.Raycast(transform.position, Vector3.down,
+                                    GetComponent<Collider>().bounds.extents.y + groundCheckDistance,
+                                    groundLayer);
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
+
         // Mouse Sensitivity
         if (PlayerPrefs.HasKey("MouseSensitivity"))
         {
@@ -56,12 +86,12 @@ public class PlayerMovement : MonoBehaviour
             lookSpeedY = savedSensitivity;
         }
 
-            // Get mouse movement
-            float mouseX = Input.GetAxis("Mouse X") * lookSpeedX;
+        // Get mouse movement
+        float mouseX = Input.GetAxis("Mouse X") * lookSpeedX;
         float mouseY = Input.GetAxis("Mouse Y") * lookSpeedY;
 
         moveAround = MenuObject.GetComponent<Checkpoints>().backToMenuBool;
-        if (moveAround==false)
+        if (moveAround == false)
         {
             // Rotate player left/right
             transform.Rotate(Vector3.up * mouseX);

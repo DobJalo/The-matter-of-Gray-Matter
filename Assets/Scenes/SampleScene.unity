@@ -5355,7 +5355,7 @@ GameObject:
   - component: {fileID: 342322680}
   - component: {fileID: 342322679}
   - component: {fileID: 342322678}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6466,6 +6466,12 @@ MonoBehaviour:
   plane2: {fileID: 1979356129}
   plane3: {fileID: 342322677}
   MenuObject: {fileID: 1964191540}
+  playerCamera: {fileID: 330585545}
+  jumpForce: 5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  groundCheckDistance: 0.1
 --- !u!1 &1127812376
 GameObject:
   m_ObjectHideFlags: 0
@@ -6701,7 +6707,7 @@ GameObject:
   - component: {fileID: 1258373366}
   - component: {fileID: 1258373365}
   - component: {fileID: 1258373364}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7311,7 +7317,7 @@ GameObject:
   - component: {fileID: 1717208511}
   - component: {fileID: 1717208510}
   - component: {fileID: 1717208509}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7946,7 +7952,7 @@ GameObject:
   - component: {fileID: 1979356133}
   - component: {fileID: 1979356132}
   - component: {fileID: 1979356131}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
