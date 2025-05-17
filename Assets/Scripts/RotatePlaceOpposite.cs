@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class RotatePlaceOpposite : MonoBehaviour
+public class RotateInPlaceOpposite : MonoBehaviour
 {
-    public float speed = - 50f; // degrees per second
+    public float speed = 50f; // degrees per second
 
     void Update()
     {
