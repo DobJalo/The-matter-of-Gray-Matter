@@ -17,7 +17,7 @@ public class Checkpoints : MonoBehaviour
         //switch between levels
         if (Input.GetKey("0") && Input.GetKey(KeyCode.LeftShift))
         {
-            player.transform.position = new Vector3(0, 0, 0); //start position
+            player.transform.position = new Vector3(0, 1, 0); //start position
             PlayerPrefs.DeleteKey("Checkpoint");
         }
         if (Input.GetKey("1") && Input.GetKey(KeyCode.LeftShift))
@@ -70,7 +70,7 @@ public class Checkpoints : MonoBehaviour
         {
             if (!PlayerPrefs.HasKey("Checkpoint"))
             {
-                other.gameObject.transform.position = new Vector3(0, 0, 0);
+                other.gameObject.transform.position = new Vector3(0, 1, 0);
             }
             if (PlayerPrefs.GetInt("Checkpoint")==1)
             {
