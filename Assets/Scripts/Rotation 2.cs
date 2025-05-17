@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class RotateInPlace : MonoBehaviour
+public class RotateOnPlace : MonoBehaviour
 {
-    public float speed = 50f; // degrees per second
+    public float speed = - 50f; // degrees per second
+
     void Update()
     {
         // Rotate clockwise around local X axis
