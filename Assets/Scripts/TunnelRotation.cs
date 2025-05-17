@@ -1,11 +1,12 @@
 using UnityEngine;
 
-public class TunnelRotation : MonoBehaviour
+public class RotateInPlace : MonoBehaviour
 {
-    public Vector3 rotationSpeed = new Vector3(0, -50f, 0);
+    public float speed = 50f; // degrees per second
 
     void Update()
     {
-        transform.Rotate(rotationSpeed * Time.deltaTime);
+        // Rotate clockwise around local X axis
+        transform.Rotate(speed * Time.deltaTime, 0, 0, Space.Self);
     }
 }
