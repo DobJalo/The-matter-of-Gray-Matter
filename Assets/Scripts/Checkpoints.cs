@@ -17,16 +17,16 @@ public class Checkpoints : MonoBehaviour
         //switch between levels
         if (Input.GetKey("0") && Input.GetKey(KeyCode.LeftShift))
         {
-            player.transform.position = new Vector3(0, 1, 0); //start position
+            player.transform.position = new Vector3(0, 2, 0); //start position
             PlayerPrefs.DeleteKey("Checkpoint");
         }
         if (Input.GetKey("1") && Input.GetKey(KeyCode.LeftShift))
         {
-            player.transform.position = plane2.transform.position;
+            player.transform.position = new Vector3(plane2.transform.position.x, plane2.transform.position.y + 2, plane2.transform.position.z);
         }
         if (Input.GetKey("2") && Input.GetKey(KeyCode.LeftShift))
         {
-            player.transform.position = plane3.transform.position;
+            player.transform.position = new Vector3(plane3.transform.position.x, plane3.transform.position.y + 2, plane3.transform.position.z);//plane3.transform.position;
         }
         if (Input.GetKey("3") && Input.GetKey(KeyCode.LeftShift))
         {
@@ -70,16 +70,16 @@ public class Checkpoints : MonoBehaviour
         {
             if (!PlayerPrefs.HasKey("Checkpoint"))
             {
-                other.gameObject.transform.position = new Vector3(0, 1, 0);
+                other.gameObject.transform.position = new Vector3(0, 3, 0);
             }
             if (PlayerPrefs.GetInt("Checkpoint")==1)
             {
-                other.gameObject.transform.position = plane2.transform.position;
+                other.gameObject.transform.position = new Vector3(plane2.transform.position.x, plane2.transform.position.y+2, plane2.transform.position.z);//plane2.transform.position;
             }
             if (PlayerPrefs.GetInt("Checkpoint") == 2)
             {
-                other.gameObject.transform.position = plane3.transform.position;
-                
+                other.gameObject.transform.position = new Vector3(plane3.transform.position.x, plane3.transform.position.y + 3, plane3.transform.position.z);//plane3.transform.position;
+
             }
         }
     }

@@ -33,11 +33,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if (PlayerPrefs.GetInt("Checkpoint") == 1)
             {
-                this.gameObject.transform.position = plane2.transform.position;
+                this.gameObject.transform.position = new Vector3(plane2.transform.position.x, plane2.transform.position.y + 2, plane2.transform.position.z); //plane2.transform.position;
             }
             if (PlayerPrefs.GetInt("Checkpoint") == 2)
             {
-                this.gameObject.transform.position = plane3.transform.position;
+                this.gameObject.transform.position = new Vector3(plane3.transform.position.x, plane3.transform.position.y + 2, plane3.transform.position.z);//plane3.transform.position;
             }
         }
 
@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             speed = 5;
-            playerCamera.fieldOfView = 62;
+            playerCamera.fieldOfView = 64;
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
