@@ -8,6 +8,7 @@ public class Checkpoints : MonoBehaviour
     public GameObject plane2;
     public GameObject plane3;
     public GameObject backToMenu;
+    public GameObject deathScreen;
 
     public bool backToMenuBool = false;
 
@@ -68,6 +69,7 @@ public class Checkpoints : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            deathScreen.SetActive(true);
             if (!PlayerPrefs.HasKey("Checkpoint"))
             {
                 other.gameObject.transform.position = new Vector3(0, 3, 0);
