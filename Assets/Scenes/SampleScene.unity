@@ -5386,6 +5386,78 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: {fileID: 1572042330}
+--- !u!1001 &224258420
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 116.3754
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 183.08958
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 183.08958
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 109.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.50177276
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5017729
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.49822098
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.49822092
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 89.593
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      propertyPath: m_Name
+      value: TriangleTunnel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1453932302}
+  m_SourcePrefab: {fileID: 100100000, guid: 2264108a3358d744eb8007146c52b787, type: 3}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -6514,6 +6586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushForce: 2
+  windDirection: {x: -1, y: 0, z: 0}
 --- !u!65 &869978706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7667,6 +7740,24 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1453932301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2264108a3358d744eb8007146c52b787, type: 3}
+  m_PrefabInstance: {fileID: 224258420}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1453932302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453932301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ff04f3486033ee4890babd290a27809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
 --- !u!1 &1486821476
 GameObject:
   m_ObjectHideFlags: 0
@@ -8795,6 +8886,7 @@ MonoBehaviour:
   plane2: {fileID: 1997220646}
   plane3: {fileID: 975888913}
   backToMenu: {fileID: 2053494490}
+  deathScreen: {fileID: 0}
   backToMenuBool: 0
 --- !u!4 &1964191542
 Transform:
@@ -9238,3 +9330,4 @@ SceneRoots:
   - {fileID: 925396946}
   - {fileID: 110064487}
   - {fileID: 1574565391}
+  - {fileID: 224258420}
