@@ -8552,8 +8552,8 @@ Transform:
   m_GameObject: {fileID: 1565950275}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.143, y: -0.4399, z: -24.58}
+  m_LocalScale: {x: 3.434626, y: 3.6277525, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1041572882}
@@ -8570,7 +8570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dd112ec64c6a94381071ee252ca3ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpoint: {fileID: 1964191540}
+  checkpoint: {fileID: 222680573}
   deathScreen: {fileID: 1588640137}
 --- !u!65 &1565950278
 BoxCollider:
