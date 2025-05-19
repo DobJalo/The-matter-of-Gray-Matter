@@ -7256,6 +7256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Experiment 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7202271454713460447, guid: d9c762c63dffb8a4c86f64799a60fc3e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 22b61978e45808244a35a7833e88adda, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: d9c762c63dffb8a4c86f64799a60fc3e, type: 3}
