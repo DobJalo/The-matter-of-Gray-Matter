@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1bfcbdca8569eb84fb8b43c5830434ce
+guid: bf952cee1cc8dd042871199e0af73343
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -52,7 +52,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: menu background2_0
+      name: settings buttons_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 6142
-        height: 4488
+        x: 2629
+        y: 1027
+        width: 903
+        height: 305
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28e50f7997d152a4295e02ff88abe121
-      internalID: 1769042073
+      spriteID: 83c38e4205413b549b5e3aaaeddd84d0
+      internalID: 1553494851
       vertices: []
       indices: 
       edges: []
@@ -122,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4080d4506b6101649821c7c44407117b
+    spriteID: c2f59c5538c9efd4da246d0fe038603c
     internalID: 0
     vertices: []
     indices: 
@@ -132,7 +132,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      menu background2_0: 1769042073
+      settings buttons_0: 1553494851
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
