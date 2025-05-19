@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1bfcbdca8569eb84fb8b43c5830434ce
+guid: 6d57150b752fc55468f23a3177ac516a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -52,7 +52,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: menu background2_0
+      name: Menu without buttons 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28e50f7997d152a4295e02ff88abe121
-      internalID: 1769042073
+      spriteID: 38be11d2e282f694c9439c878116a05e
+      internalID: 644507853
       vertices: []
       indices: 
       edges: []
@@ -122,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4080d4506b6101649821c7c44407117b
+    spriteID: ec6c275b79a42344b82d0655147443af
     internalID: 0
     vertices: []
     indices: 
@@ -132,7 +132,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      menu background2_0: 1769042073
+      Menu without buttons 1_0: 644507853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
