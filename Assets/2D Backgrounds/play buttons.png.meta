@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bf952cee1cc8dd042871199e0af73343
+guid: abd54d744b6d5a845a8c5a25b637343c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -97,23 +97,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: settings buttons_0
+      name: play buttons_0
       rect:
         serializedVersion: 2
-        x: 2636
-        y: 1040
-        width: 890
-        height: 250
+        x: 2791
+        y: 1438
+        width: 566
+        height: 324
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83c38e4205413b549b5e3aaaeddd84d0
-      internalID: 1553494851
+      spriteID: 1f547a8b3ef52aa438c30e5bfe5b1111
+      internalID: -1555822354
       vertices: []
       indices: 
       edges: []
@@ -122,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c2f59c5538c9efd4da246d0fe038603c
+    spriteID: f3e50bef86c2dec4aaa7f2db179066f7
     internalID: 0
     vertices: []
     indices: 
@@ -132,7 +132,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      settings buttons_0: 1553494851
+      play buttons_0: -1555822354
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
