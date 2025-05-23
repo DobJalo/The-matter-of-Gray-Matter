@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Scoresystem : MonoBehaviour
 {
     public Text timerText;
     public GameObject resultsPanel;
-    public Text resultsText;
+    public TMP_Text resultsText;
 
     private float timer = 0f;
     private bool timerRunning = false;
