@@ -72,7 +72,7 @@ public class Checkpoints : MonoBehaviour
             deathScreen.SetActive(true);
             if (!PlayerPrefs.HasKey("Checkpoint"))
             {
-                other.gameObject.transform.position = new Vector3(0, 3, 0);
+                other.gameObject.transform.position = new Vector3(0, 4, 0);
             }
             if (PlayerPrefs.GetInt("Checkpoint")==1)
             {
