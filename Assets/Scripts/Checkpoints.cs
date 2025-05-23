@@ -7,6 +7,7 @@ public class Checkpoints : MonoBehaviour
     public GameObject player;
     public GameObject plane2;
     public GameObject plane3;
+    public GameObject ending;
     public GameObject backToMenu;
     public GameObject deathScreen;
 
@@ -31,7 +32,7 @@ public class Checkpoints : MonoBehaviour
         }
         if (Input.GetKey("3") && Input.GetKey(KeyCode.LeftShift))
         {
-            Debug.Log("End checkpoint in Progress");
+            player.transform.position = new Vector3(ending.transform.position.x, ending.transform.position.y + 2, ending.transform.position.z);
         }
         if (Input.GetKey("4") && Input.GetKey(KeyCode.LeftShift))
         {
