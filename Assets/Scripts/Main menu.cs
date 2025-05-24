@@ -5,8 +5,16 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        // Load next scene (make sure it's added to Build Settings)
-        SceneManager.LoadScene("EnterYourName");
+        Debug.Log(PlayerName.playerName);
+        if (PlayerName.playerName == "")
+        {
+            // Load next scene (make sure it's added to Build Settings)
+            SceneManager.LoadScene("EnterYourName");
+        }
+        else
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
     }
 
     public void OpenOptions()

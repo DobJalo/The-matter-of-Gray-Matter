@@ -10,8 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private float xRotation = 0f;
 
-    public GameObject plane2;
-    public GameObject plane3;
+    public GameObject plane2; //first checkpoint
+    public GameObject plane3; //second checkpoint
 
     public GameObject MenuObject;
     private bool moveAround = false;
@@ -29,24 +29,26 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>(); // Get Rigidbody component from Player
 
         //start position (checkpoints)
+        //place player on a particular checkpoint based on previous saves
         if (PlayerPrefs.HasKey("Checkpoint"))
         {
             if (PlayerPrefs.GetInt("Checkpoint") == 1)
             {
-                this.gameObject.transform.position = new Vector3(plane2.transform.position.x, plane2.transform.position.y + 2, plane2.transform.position.z); //plane2.transform.position;
+                this.gameObject.transform.position = new Vector3(plane2.transform.position.x, plane2.transform.position.y + 2, plane2.transform.position.z); 
             }
             if (PlayerPrefs.GetInt("Checkpoint") == 2)
             {
-                this.gameObject.transform.position = new Vector3(plane3.transform.position.x, plane3.transform.position.y + 2, plane3.transform.position.z);//plane3.transform.position;
+                this.gameObject.transform.position = new Vector3(plane3.transform.position.x, plane3.transform.position.y + 2, plane3.transform.position.z);
             }
         }
 
 
     }
 
-    void FixedUpdate() // FixedUpdate is better for synchronization physics and movement
+    void FixedUpdate() 
     {
         // Player movement
+        //controls are reversed on purpose 
         float moveX = -Input.GetAxis("Horizontal");
         float moveZ = -Input.GetAxis("Vertical");
 
@@ -59,8 +61,8 @@ public class PlayerMovement : MonoBehaviour
         //Running
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            speed = 5;
-            playerCamera.fieldOfView = 64;
+            speed = 5; //change speed
+            playerCamera.fieldOfView = 64; //change camera view while running (inform player about running through the visuals)
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
@@ -69,9 +71,9 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Jumping
-        isGrounded = Physics.Raycast(transform.position, Vector3.down,
-                                    GetComponent<Collider>().bounds.extents.y + groundCheckDistance,
-                                    groundLayer);
+
+        //if player is on the ground (object has Ground layer) - jumps are allowed
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, GetComponent<Collider>().bounds.extents.y + groundCheckDistance, groundLayer);
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
@@ -90,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X") * lookSpeedX;
         float mouseY = Input.GetAxis("Mouse Y") * lookSpeedY;
 
-        moveAround = MenuObject.GetComponent<Checkpoints>().backToMenuBool;
+        moveAround = MenuObject.GetComponent<Checkpoints>().backToMenuBool; //check if pause menu is open and stop movements if it is
         if (moveAround == false)
         {
             // Rotate player left/right

@@ -39,6 +39,21 @@ public class Checkpoints : MonoBehaviour
             PlayerPrefs.DeleteKey("Checkpoint");
             Debug.Log("Checkpoints were deleted");
         }
+        //delete the score results
+        if (Input.GetKey("5") && Input.GetKey(KeyCode.LeftShift))
+        {
+            PlayerPrefs.DeleteKey("Score");
+            Debug.Log("All scores were deleted");
+            //delete timer save
+        }
+        //delete current score session
+        if (Input.GetKey("6") && Input.GetKey(KeyCode.LeftShift))
+        {
+            PlayerName.playerName = "";
+            Debug.Log("Current score session was deleted");
+            //delete timer save
+            PlayerName.timer = 0;
+        }
 
         //pause
         if (Input.GetKeyDown(KeyCode.Escape) && backToMenuBool==false)

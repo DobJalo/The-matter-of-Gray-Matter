@@ -12,6 +12,8 @@ public class Scoresystem : MonoBehaviour
     private float timer = 0f;
     private bool timerRunning = false;
 
+    private const string Score = "Score"; //save slot
+
     private struct PlayerResult
     {
         public string name;
@@ -28,7 +30,15 @@ public class Scoresystem : MonoBehaviour
 
     void Start()
     {
-        timer = 0;
+        if(PlayerName.timer==0)
+        {
+            timer = PlayerName.timer;
+        }
+        else
+        {
+            timer = 0;
+        }
+
         timerRunning = true;
         resultsPanel.SetActive(false);
     }
@@ -44,6 +54,8 @@ public class Scoresystem : MonoBehaviour
 
             // update timer text
             timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+            PlayerName.timer = timer;
         }
     }
 
@@ -56,25 +68,42 @@ public class Scoresystem : MonoBehaviour
 
         // save result
         allResults.Add(new PlayerResult(PlayerName.playerName, timer));
-
         ShowResults();
     }
 
     void ShowResults()
     {
+
+
         resultsPanel.SetActive(true);
 
         // Sorting
         allResults.Sort((a, b) => a.time.CompareTo(b.time));
 
-        resultsText.text = "Results:\n";
-
-        foreach (var result in allResults)
+        if (!PlayerPrefs.HasKey("Score"))
         {
-            int minutes = Mathf.FloorToInt(result.time / 60f);
-            int seconds = Mathf.FloorToInt(result.time % 60f);
-
-            resultsText.text += result.name + " - " + string.Format("{0:00}:{1:00}", minutes, seconds) + "\n";
+            resultsText.text = "Results:\n";
         }
+        else
+        {
+            resultsText.text = PlayerPrefs.GetString("Score");
+        }    
+
+
+            foreach (var result in allResults)
+            {
+                int minutes = Mathf.FloorToInt(result.time / 60f);
+                int seconds = Mathf.FloorToInt(result.time % 60f);
+
+                resultsText.text += result.name + " - " + string.Format("{0:00}:{1:00}", minutes, seconds) + "\n";
+            }
+
+        //delete timer save
+        PlayerName.timer = 0;
+
+        //save results as a save
+        PlayerName.playerName = "";
+        PlayerPrefs.SetString(Score, resultsText.text);
+        PlayerPrefs.Save();
     }
 }
