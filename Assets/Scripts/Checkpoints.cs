@@ -17,43 +17,30 @@ public class Checkpoints : MonoBehaviour
     void Update()
     {
         //switch between levels
-        if (Input.GetKey("0") && Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey("1") && Input.GetKey(KeyCode.LeftShift))
         {
             player.transform.position = new Vector3(0, 2, 0); //start position
             PlayerPrefs.DeleteKey("Checkpoint");
         }
-        if (Input.GetKey("1") && Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey("2") && Input.GetKey(KeyCode.LeftShift))
         {
             player.transform.position = new Vector3(plane2.transform.position.x, plane2.transform.position.y + 2, plane2.transform.position.z);
         }
-        if (Input.GetKey("2") && Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey("3") && Input.GetKey(KeyCode.LeftShift))
         {
             player.transform.position = new Vector3(plane3.transform.position.x, plane3.transform.position.y + 2, plane3.transform.position.z);//plane3.transform.position;
         }
-        if (Input.GetKey("3") && Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey("4") && Input.GetKey(KeyCode.LeftShift))
         {
             player.transform.position = new Vector3(ending.transform.position.x, ending.transform.position.y + 2, ending.transform.position.z);
         }
-        if (Input.GetKey("4") && Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey("5") && Input.GetKey(KeyCode.LeftShift))
         {
             PlayerPrefs.DeleteKey("Checkpoint");
             Debug.Log("Checkpoints were deleted");
         }
-        //delete the score results
-        if (Input.GetKey("5") && Input.GetKey(KeyCode.LeftShift))
-        {
-            PlayerPrefs.DeleteKey("Score");
-            Debug.Log("All scores were deleted");
-            //delete timer save
-        }
-        //delete current score session
-        if (Input.GetKey("6") && Input.GetKey(KeyCode.LeftShift))
-        {
-            PlayerName.playerName = "";
-            Debug.Log("Current score session was deleted");
-            //delete timer save
-            PlayerName.timer = 0;
-        }
+        
+
 
         //pause
         if (Input.GetKeyDown(KeyCode.Escape) && backToMenuBool==false)
