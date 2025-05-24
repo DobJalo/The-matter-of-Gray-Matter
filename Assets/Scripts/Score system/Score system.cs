@@ -32,11 +32,11 @@ public class Scoresystem : MonoBehaviour
     {
         if(PlayerName.timer==0)
         {
-            timer = PlayerName.timer;
+            timer = 0;
         }
         else
         {
-            timer = 0;
+            timer = PlayerName.timer;
         }
 
         timerRunning = true;
