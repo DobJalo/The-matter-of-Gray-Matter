@@ -8897,14 +8897,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1085339484}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.4827531, z: -0, w: 0.8757565}
-  m_LocalPosition: {x: -3.11, y: -114.58, z: 123.57}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 330585546}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -57.731, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1085339490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10258,7 +10258,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382887691}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 134.57}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10266,8 +10266,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -130.37, y: -218}
-  m_SizeDelta: {x: 291.65, y: 66.07}
+  m_AnchoredPosition: {x: 351.52, y: 139.5}
+  m_SizeDelta: {x: 202.7, y: 103.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1382887693
 MonoBehaviour:
@@ -10282,7 +10282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10291,10 +10291,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 19
-    m_FontStyle: 0
+    m_FontSize: 25
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -10829,8 +10829,8 @@ Transform:
   m_GameObject: {fileID: 1557416772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1356, y: 2.8691, z: -4.77}
-  m_LocalScale: {x: 7.1197634, y: 5.6878157, z: 0.1238}
+  m_LocalPosition: {x: 0.1356, y: 4.372, z: -4.77}
+  m_LocalScale: {x: 7.1197634, y: 8.693438, z: 0.1238}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 402089696}
@@ -13300,7 +13300,7 @@ GameObject:
   - component: {fileID: 2099265548}
   - component: {fileID: 2099265547}
   - component: {fileID: 2099265546}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
