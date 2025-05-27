@@ -16,6 +16,8 @@ public class platforms_level2 : MonoBehaviour
     public GameObject pl12;
     public GameObject pl13;
 
+    private int topDistance = 3;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,23 +25,23 @@ public class platforms_level2 : MonoBehaviour
         {
             if(this.gameObject == pl9)
             {
-                other.gameObject.transform.position = new Vector3(pl4.transform.position.x, pl4.transform.position.y, pl4.transform.position.z);
+                other.gameObject.transform.position = new Vector3(pl4.transform.position.x, pl4.transform.position.y+ topDistance, pl4.transform.position.z);
             }
             if (this.gameObject == pl8)
             {
-                other.gameObject.transform.position = new Vector3(pl6.transform.position.x, pl6.transform.position.y, pl6.transform.position.z);
+                other.gameObject.transform.position = new Vector3(pl6.transform.position.x, pl6.transform.position.y+ topDistance, pl6.transform.position.z);
             }
             if (this.gameObject == pl5)
             {
-                other.gameObject.transform.position = new Vector3(pl3.transform.position.x, pl3.transform.position.y, pl3.transform.position.z);
+                other.gameObject.transform.position = new Vector3(pl3.transform.position.x, pl3.transform.position.y+ topDistance, pl3.transform.position.z);
             }
             if (this.gameObject == pl2)
             {
-                other.gameObject.transform.position = new Vector3(pl7.transform.position.x, pl7.transform.position.y, pl7.transform.position.z);
+                other.gameObject.transform.position = new Vector3(pl7.transform.position.x, pl7.transform.position.y+ topDistance, pl7.transform.position.z);
             }
             if (this.gameObject == pl11)
             {
-                other.gameObject.transform.position = new Vector3(pl10.transform.position.x, pl10.transform.position.y, pl10.transform.position.z);
+                other.gameObject.transform.position = new Vector3(pl10.transform.position.x, pl10.transform.position.y + topDistance, pl10.transform.position.z);
             }
 
         }
