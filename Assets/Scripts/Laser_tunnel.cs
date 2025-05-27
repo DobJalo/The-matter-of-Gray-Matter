@@ -7,18 +7,20 @@ public class Laser_tunnel : MonoBehaviour
 
     private void Start()
     {
-        Invoke("LasersOn", time);
+        Invoke("LasersOn", time); // starts LaserOn in "time" seconds (float "time" is 1 second)
     }
 
     void LasersOn()
     {
-        lasers.SetActive(true);
-        Invoke("LasersOff", time);
+        lasers.SetActive(true); // show lasers
+        Invoke("LasersOff", time); // starts LasersOff in "time" seconds (float "time" is 1 second)
     }
 
     void LasersOff()
     {
-        lasers.SetActive(false);
-        Invoke("LasersOn", time);
+        lasers.SetActive(false); // hide lasers
+        Invoke("LasersOn", time); // starts LaserOn in "time" seconds (float "time" is 1 second)
     }
+
+    //the process repeats all the time during the game
 }

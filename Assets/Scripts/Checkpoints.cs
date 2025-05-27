@@ -1,4 +1,3 @@
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,80 +6,83 @@ public class Checkpoints : MonoBehaviour
     public GameObject player;
     public GameObject plane2;
     public GameObject plane3;
+    public GameObject ending;
     public GameObject backToMenu;
     public GameObject deathScreen;
 
     public bool backToMenuBool = false;
 
-    // Update is called once per frame
     void Update()
     {
-        //switch between levels
-        if (Input.GetKey("0") && Input.GetKey(KeyCode.LeftShift))
+        //quick switch between checkpoints
+        if (Input.GetKey("1") && Input.GetKey(KeyCode.LeftShift)) //if "1" and Shift are pressed at the same time
         {
-            player.transform.position = new Vector3(0, 2, 0); //start position
-            PlayerPrefs.DeleteKey("Checkpoint");
+            player.transform.position = new Vector3(0, 2, 0); //teleport player to start position
+            PlayerPrefs.DeleteKey("Checkpoint"); //delete any information about saved checkpoints
         }
-        if (Input.GetKey("1") && Input.GetKey(KeyCode.LeftShift))
+        //same logic below:
+        if (Input.GetKey("2") && Input.GetKey(KeyCode.LeftShift))
         {
             player.transform.position = new Vector3(plane2.transform.position.x, plane2.transform.position.y + 2, plane2.transform.position.z);
         }
-        if (Input.GetKey("2") && Input.GetKey(KeyCode.LeftShift))
-        {
-            player.transform.position = new Vector3(plane3.transform.position.x, plane3.transform.position.y + 2, plane3.transform.position.z);//plane3.transform.position;
-        }
         if (Input.GetKey("3") && Input.GetKey(KeyCode.LeftShift))
         {
-            Debug.Log("End checkpoint in Progress");
+            player.transform.position = new Vector3(plane3.transform.position.x, plane3.transform.position.y + 2, plane3.transform.position.z);
         }
         if (Input.GetKey("4") && Input.GetKey(KeyCode.LeftShift))
+        {
+            player.transform.position = new Vector3(ending.transform.position.x, ending.transform.position.y + 2, ending.transform.position.z);
+        }
+        //deletes the information about checkpoint saves
+        if (Input.GetKey("5") && Input.GetKey(KeyCode.LeftShift))
         {
             PlayerPrefs.DeleteKey("Checkpoint");
             Debug.Log("Checkpoints were deleted");
         }
+        
 
-        //pause
+
+        //pause menu (opens on pressing Escape)
         if (Input.GetKeyDown(KeyCode.Escape) && backToMenuBool==false)
         {
-            backToMenu.SetActive(true);
-            backToMenuBool = true;
+            backToMenu.SetActive(true); //show pause menu
+            backToMenuBool = true; //this variable helps to prevent pause menu opening and closing all the time when Escape is pressed 
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && backToMenuBool == true)
         {
-            backToMenu.SetActive(false);
+            backToMenu.SetActive(false); //hide pause menu
             backToMenuBool = false;
         }
     }
 
-    public void CloseMenu()
+ 
+    public void CloseMenu() //close pause menu
     {
         backToMenu.SetActive(false);
         backToMenuBool = false;
     }
-
-    //to main menu
-    public void BackToMenu()
+    public void BackToMenu() //to main menu
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Main Menu"); // load main menu scene
     }
-
-    //if player falls
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) //if player falls out of the level (death)
     {
         if(other.CompareTag("Player"))
         {
-            deathScreen.SetActive(true);
+            deathScreen.SetActive(true); //show death screen
+
+            //teleport player based on the information about last checkpoint
             if (!PlayerPrefs.HasKey("Checkpoint"))
             {
-                other.gameObject.transform.position = new Vector3(0, 3, 0);
+                other.gameObject.transform.position = new Vector3(0, 4, 0);
             }
             if (PlayerPrefs.GetInt("Checkpoint")==1)
             {
-                other.gameObject.transform.position = new Vector3(plane2.transform.position.x, plane2.transform.position.y+2, plane2.transform.position.z);//plane2.transform.position;
+                other.gameObject.transform.position = new Vector3(plane2.transform.position.x, plane2.transform.position.y+2, plane2.transform.position.z);
             }
             if (PlayerPrefs.GetInt("Checkpoint") == 2)
             {
-                other.gameObject.transform.position = new Vector3(plane3.transform.position.x, plane3.transform.position.y + 3, plane3.transform.position.z);//plane3.transform.position;
+                other.gameObject.transform.position = new Vector3(plane3.transform.position.x, plane3.transform.position.y + 3, plane3.transform.position.z);
 
             }
         }
