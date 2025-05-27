@@ -7215,11 +7215,11 @@ Transform:
   m_GameObject: {fileID: 560927021}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -571.4635, y: 840.8426, z: -3294.7324}
+  m_LocalPosition: {x: -571.4635, y: 840.8424, z: -3294.7324}
   m_LocalScale: {x: 331.0382, y: 331.0382, z: 331.0382}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2053494491}
+  m_Father: {fileID: 1712244266}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &560927023
 MonoBehaviour:
@@ -7234,8 +7234,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 1300488876}
-  audioSource: {fileID: 819098233}
   sensitivitySlider: {fileID: 1224966826}
+  audioSources:
+  - {fileID: 770529177}
+  - {fileID: 311791367}
 --- !u!1 &573134772
 GameObject:
   m_ObjectHideFlags: 0
@@ -8150,7 +8152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &819098233
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12231,6 +12233,7 @@ RectTransform:
   - {fileID: 2053494491}
   - {fileID: 1588640140}
   - {fileID: 1382887692}
+  - {fileID: 560927022}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -13454,7 +13457,6 @@ RectTransform:
   - {fileID: 1743330139}
   - {fileID: 1127812377}
   - {fileID: 1489807301}
-  - {fileID: 560927022}
   m_Father: {fileID: 1712244266}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}

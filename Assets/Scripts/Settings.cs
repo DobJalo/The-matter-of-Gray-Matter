@@ -1,6 +1,76 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
+public class Settings : MonoBehaviour
+{
+    [Header("UI")]
+    public Slider volumeSlider;
+    public Slider sensitivitySlider;
+
+    [Header("Audio Sources")]
+    public AudioSource[] audioSources; 
+
+    [Header("Settings")]
+    private const string VolumeKey = "Volume";
+    private const string SensitivityKey = "MouseSensitivity";
+    private const int SensitivityInteger = 7;
+
+    void Start()
+    {
+
+        float savedVolume = PlayerPrefs.GetFloat(VolumeKey, 1f);
+        ApplyVolumeToAllSources(savedVolume);
+
+        if (volumeSlider != null)
+        {
+            volumeSlider.value = savedVolume;
+            volumeSlider.onValueChanged.AddListener(OnVolumeChanged);
+        }
+
+
+        float savedSensitivity = PlayerPrefs.GetFloat(SensitivityKey, 2f * SensitivityInteger);
+        if (sensitivitySlider != null)
+        {
+            sensitivitySlider.value = savedSensitivity / SensitivityInteger;
+            sensitivitySlider.onValueChanged.AddListener(OnSensitivityChanged);
+        }
+    }
+
+    void OnVolumeChanged(float value)
+    {
+        PlayerPrefs.SetFloat(VolumeKey, value);
+        PlayerPrefs.Save();
+        ApplyVolumeToAllSources(value);
+    }
+
+    void ApplyVolumeToAllSources(float volume)
+    {
+        foreach (AudioSource source in audioSources)
+        {
+            if (source != null)
+                source.volume = volume;
+        }
+    }
+
+    void OnSensitivityChanged(float value)
+    {
+        PlayerPrefs.SetFloat(SensitivityKey, value * SensitivityInteger);
+        PlayerPrefs.Save();
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+}
+
+
+
+
+/*using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine.LowLevel;
 
 public class Settings : MonoBehaviour
@@ -75,3 +145,4 @@ public class Settings : MonoBehaviour
 
  
 }
+*/
