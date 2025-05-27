@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     public float groundCheckDistance = 0.1f;
     private bool isGrounded;
 
+    private int distance = 3;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>(); // Get Rigidbody component from Player
@@ -34,11 +36,13 @@ public class PlayerMovement : MonoBehaviour
         {
             if (PlayerPrefs.GetInt("Checkpoint") == 1)
             {
-                this.gameObject.transform.position = new Vector3(plane2.transform.position.x, plane2.transform.position.y + 2, plane2.transform.position.z); 
+                rb.linearVelocity = Vector3.zero;
+                this.gameObject.transform.position = new Vector3(plane2.transform.position.x, plane2.transform.position.y + distance, plane2.transform.position.z); 
             }
             if (PlayerPrefs.GetInt("Checkpoint") == 2)
             {
-                this.gameObject.transform.position = new Vector3(plane3.transform.position.x, plane3.transform.position.y + 2, plane3.transform.position.z);
+                rb.linearVelocity = Vector3.zero;
+                this.gameObject.transform.position = new Vector3(plane3.transform.position.x, plane3.transform.position.y + distance, plane3.transform.position.z);
             }
         }
 
