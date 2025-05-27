@@ -319,8 +319,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1382887693}
-  resultsPanel: {fileID: 0}
-  resultsText: {fileID: 0}
+  resultsPanel: {fileID: 700766797}
+  resultsText: {fileID: 1276283244}
 --- !u!65 &121857091
 BoxCollider:
   m_ObjectHideFlags: 0
