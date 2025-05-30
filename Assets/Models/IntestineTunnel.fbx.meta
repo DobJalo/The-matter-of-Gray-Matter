@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b0d092866678f0d419c16214ad3221f8
+guid: 8cb0fb4deb07b584faf6cf70bdaed973
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: 4771de72ee1993a45b2fb82d9ae64257, type: 2}
+      name: spiral_
+    second: {fileID: 2100000, guid: 458223b196a53674b8ba26f89d318474, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
