@@ -6,6 +6,8 @@ public class Checkpoints : MonoBehaviour
     public GameObject player;
     public GameObject plane2;
     public GameObject plane3;
+    public GameObject plane4;
+    public GameObject plane5;
     public GameObject ending;
     public GameObject backToMenu;
     public GameObject deathScreen;
@@ -31,10 +33,18 @@ public class Checkpoints : MonoBehaviour
         }
         if (Input.GetKey("4") && Input.GetKey(KeyCode.LeftShift))
         {
+            player.transform.position = new Vector3(plane4.transform.position.x, plane4.transform.position.y + 2, plane4.transform.position.z);
+        }
+        if (Input.GetKey("5") && Input.GetKey(KeyCode.LeftShift))
+        {
+            player.transform.position = new Vector3(plane5.transform.position.x, plane5.transform.position.y + 2, plane5.transform.position.z);
+        }
+        if (Input.GetKey("6") && Input.GetKey(KeyCode.LeftShift))
+        {
             player.transform.position = new Vector3(ending.transform.position.x, ending.transform.position.y + 2, ending.transform.position.z);
         }
         //deletes the information about checkpoint saves
-        if (Input.GetKey("5") && Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey("7") && Input.GetKey(KeyCode.LeftShift))
         {
             PlayerPrefs.DeleteKey("Checkpoint");
             Debug.Log("Checkpoints were deleted");
@@ -83,6 +93,16 @@ public class Checkpoints : MonoBehaviour
             if (PlayerPrefs.GetInt("Checkpoint") == 2)
             {
                 other.gameObject.transform.position = new Vector3(plane3.transform.position.x, plane3.transform.position.y + 3, plane3.transform.position.z);
+
+            }
+            if (PlayerPrefs.GetInt("Checkpoint") == 3)
+            {
+                other.gameObject.transform.position = new Vector3(plane4.transform.position.x, plane4.transform.position.y + 3, plane4.transform.position.z);
+
+            }
+            if (PlayerPrefs.GetInt("Checkpoint") == 4)
+            {
+                other.gameObject.transform.position = new Vector3(plane5.transform.position.x, plane5.transform.position.y + 3, plane5.transform.position.z);
 
             }
         }

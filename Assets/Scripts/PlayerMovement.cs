@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject plane2; //first checkpoint
     public GameObject plane3; //second checkpoint
+    public GameObject plane4;
+    public GameObject plane5;
 
     public GameObject MenuObject;
     private bool moveAround = false;
@@ -40,6 +42,18 @@ public class PlayerMovement : MonoBehaviour
             {
                 this.gameObject.transform.position = new Vector3(plane3.transform.position.x, plane3.transform.position.y + 2, plane3.transform.position.z);
             }
+            if (PlayerPrefs.GetInt("Checkpoint") == 2)
+            {
+                this.gameObject.transform.position = new Vector3(plane4.transform.position.x, plane4.transform.position.y + 2, plane4.transform.position.z);
+            }
+            if (PlayerPrefs.GetInt("Checkpoint") == 2)
+            {
+                this.gameObject.transform.position = new Vector3(plane5.transform.position.x, plane5.transform.position.y + 2, plane5.transform.position.z);
+            }
+        }
+        else
+        {
+            this.gameObject.transform.position = new Vector3(0, 2, 0);
         }
 
 
