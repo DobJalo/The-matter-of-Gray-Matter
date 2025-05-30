@@ -16,6 +16,9 @@ public class Scoresystem : MonoBehaviour
 
     private bool stopTime = false;
 
+    //checkpoint:
+    private const string CheckpointKey = "Checkpoint";
+
     // sctruct to store an information about player
     private struct PlayerResult
     {
@@ -73,6 +76,13 @@ public class Scoresystem : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Player") && PlayerPrefs.GetInt("Checkpoint") != 5)
+        {
+            PlayerPrefs.SetInt(CheckpointKey, 5);
+            PlayerPrefs.Save();
+        }
+
+
         if (!timerRunning) return;
         if (!other.CompareTag("Player")) return;
 

@@ -19,7 +19,7 @@ public class Checkpoints : MonoBehaviour
         //quick switch between checkpoints
         if (Input.GetKey("1") && Input.GetKey(KeyCode.LeftShift)) //if "1" and Shift are pressed at the same time
         {
-            player.transform.position = new Vector3(0, 2, -8); //teleport player to start position
+            player.transform.position = new Vector3(0, 4, -8); //teleport player to start position
             PlayerPrefs.DeleteKey("Checkpoint"); //delete any information about saved checkpoints
         }
         //same logic below:
@@ -103,6 +103,11 @@ public class Checkpoints : MonoBehaviour
             if (PlayerPrefs.GetInt("Checkpoint") == 4)
             {
                 other.gameObject.transform.position = new Vector3(plane5.transform.position.x, plane5.transform.position.y + 3, plane5.transform.position.z);
+
+            }
+            if (PlayerPrefs.GetInt("Checkpoint") == 5)
+            {
+                other.gameObject.transform.position = new Vector3(ending.transform.position.x, ending.transform.position.y + 3, ending.transform.position.z);
 
             }
         }

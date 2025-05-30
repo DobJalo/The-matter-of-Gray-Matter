@@ -10097,6 +10097,7 @@ MonoBehaviour:
   plane3: {fileID: 376180253}
   plane4: {fileID: 1450324670}
   plane5: {fileID: 1967198578}
+  ending: {fileID: 1589281843}
   MenuObject: {fileID: 1964191540}
   playerCamera: {fileID: 330585545}
   jumpForce: 5
@@ -13081,6 +13082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c809ca1a488709499f7a05ecfc42a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1085339484}
 --- !u!1 &1589281843
 GameObject:
   m_ObjectHideFlags: 0
@@ -13093,7 +13095,7 @@ GameObject:
   - component: {fileID: 1589281847}
   - component: {fileID: 1589281846}
   - component: {fileID: 1589281845}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
