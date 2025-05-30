@@ -16,6 +16,7 @@ public class NameInput : MonoBehaviour
             input1 = nameInput.text.Trim(); // get text from input value
             if (string.IsNullOrEmpty(input1)) return;// does not let player to leave empty space in name field
             PlayerName.playerName = input1; //save player name
+            PlayerPrefs.DeleteKey("Checkpoint"); // delete checkpoints info bacuse it is a new player
             SceneManager.LoadScene("SampleScene"); //load next scene
           
         }
