@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            this.gameObject.transform.position = new Vector3(0, 2, 0);
+            this.gameObject.transform.position = new Vector3(0, 2, -8);
         }
 
 
