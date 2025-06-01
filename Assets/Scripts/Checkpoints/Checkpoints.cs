@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class Checkpoints : MonoBehaviour
 {
     public GameObject player;
+    public GameObject plane1;
     public GameObject plane2;
     public GameObject plane3;
     public GameObject plane4;
@@ -19,7 +20,7 @@ public class Checkpoints : MonoBehaviour
         //quick switch between checkpoints
         if (Input.GetKey("1") && Input.GetKey(KeyCode.LeftShift)) //if "1" and Shift are pressed at the same time
         {
-            player.transform.position = new Vector3(0, 4, -8); //teleport player to start position
+            player.transform.position = new Vector3(plane1.transform.position.x, plane1.transform.position.y + 2, plane1.transform.position.z); //teleport player to start position
             PlayerPrefs.DeleteKey("Checkpoint"); //delete any information about saved checkpoints
         }
         //same logic below:
@@ -84,7 +85,7 @@ public class Checkpoints : MonoBehaviour
             //teleport player based on the information about last checkpoint
             if (!PlayerPrefs.HasKey("Checkpoint"))
             {
-                other.gameObject.transform.position = new Vector3(0, 4, -8);
+                other.gameObject.transform.position = new Vector3(plane1.transform.position.x, plane1.transform.position.y + 2, plane1.transform.position.z);
             }
             if (PlayerPrefs.GetInt("Checkpoint")==1)
             {

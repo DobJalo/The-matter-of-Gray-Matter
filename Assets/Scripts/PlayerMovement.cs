@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private float xRotation = 0f;
 
+    public GameObject plane1; //first platform
     public GameObject plane2; //first checkpoint
     public GameObject plane3; //second checkpoint
     public GameObject plane4;
@@ -58,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            this.gameObject.transform.position = new Vector3(0, 2, -8);
+            this.gameObject.transform.position = new Vector3(plane1.transform.position.x, plane1.transform.position.y + 2, plane1.transform.position.z);
         }
 
 
