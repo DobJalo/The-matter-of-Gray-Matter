@@ -317,6 +317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '3D Modelcerebullume '
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 47affa626bb23f148aa34a8f9db8b30b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5908,7 +5912,7 @@ GameObject:
   m_Component:
   - component: {fileID: 226041534}
   - component: {fileID: 226041535}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cerebellum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6540,14 +6544,14 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
+  m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 0
   m_Iso: 200
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 50
+  m_FocalLength: 10.919161
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -6561,8 +6565,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  far clip plane: 50
+  field of view: 95.4
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -6690,6 +6694,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c491593ab64f4a4db36b07a1ff9d616, type: 3}
       propertyPath: m_Name
       value: Star shape tunnel  1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c491593ab64f4a4db36b07a1ff9d616, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7131,54 +7139,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 25de04f453ea4f74ead59043f8a63fbc, type: 3}
   m_PrefabInstance: {fileID: 1382327454}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &477442530
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 477442532}
-  - component: {fileID: 477442531}
-  m_Layer: 0
-  m_Name: BallSapwnerT1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &477442531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477442530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16b25cb9d3229f4459998afd9069d4d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballPrefab: {fileID: 5744937965556123132, guid: 7fea56f32c2e2094388de131be4fd4b0, type: 3}
-  ballCount: 20
-  tunnelRadius: 2
-  tunnelLength: 15
---- !u!4 &477442532
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477442530}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.0012751017, z: -0, w: 0.9999992}
-  m_LocalPosition: {x: -0.7, y: 2.1006775, z: 121.4}
-  m_LocalScale: {x: 0.78079, y: 0.78079, z: 0.78079}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0.146, z: 0}
 --- !u!1 &511758558
 GameObject:
   m_ObjectHideFlags: 0
@@ -7499,6 +7459,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c102bfe26dc7fbe479461fbefd7d6411, type: 3}
       propertyPath: m_Name
       value: StartTwistedPiece
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c102bfe26dc7fbe479461fbefd7d6411, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8229,6 +8193,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c53b168f491ffe84e9ea6d44b8dc2a76, type: 3}
       propertyPath: m_Name
       value: Tunnel 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c53b168f491ffe84e9ea6d44b8dc2a76, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9374,6 +9342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '3D ModelMiddle part '
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2c0ff0653ce9e54488507bc604f6ae4f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10067,15 +10039,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad4770825cf2916438956d98c489995c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  lookSpeedX: 2
-  lookSpeedY: 2
+  speed: 7
+  lookSpeedX: 7
+  lookSpeedY: 7
   cameraTransform: {fileID: 330585546}
-  plane1: {fileID: 620888801}
-  plane2: {fileID: 1997220646}
-  plane3: {fileID: 376180253}
-  plane4: {fileID: 1450324670}
-  plane5: {fileID: 1967198578}
+  plane1: {fileID: 0}
+  plane2: {fileID: 0}
+  plane3: {fileID: 0}
+  plane4: {fileID: 0}
+  plane5: {fileID: 0}
   ending: {fileID: 1589281843}
   MenuObject: {fileID: 1964191540}
   playerCamera: {fileID: 330585545}
@@ -11529,6 +11501,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e8af357cff12f414fb52606c7140ffea, type: 3}
       propertyPath: m_Name
       value: Tunnel 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e8af357cff12f414fb52606c7140ffea, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13718,54 +13694,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674451336}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1707278215
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1707278217}
-  - component: {fileID: 1707278216}
-  m_Layer: 0
-  m_Name: BallSapwner T3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1707278216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1707278215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16b25cb9d3229f4459998afd9069d4d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballPrefab: {fileID: 5744937965556123132, guid: 7fea56f32c2e2094388de131be4fd4b0, type: 3}
-  ballCount: 20
-  tunnelRadius: 2
-  tunnelLength: 15
---- !u!4 &1707278217
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1707278215}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.0012751017, z: -0, w: 0.9999992}
-  m_LocalPosition: {x: -0.3197703, y: -0.6084709, z: 270.49744}
-  m_LocalScale: {x: 0.78079, y: 0.78079, z: 0.78079}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0.146, z: 0}
 --- !u!1 &1712244262
 GameObject:
   m_ObjectHideFlags: 0
@@ -14524,6 +14452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Last Tunnel '
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a6a445f6719556647a84fb7aed2e06db, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14839,54 +14771,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.7214136, y: 0.81017786, z: 4.2181544}
   m_Center: {x: 0.013062835, y: 0.85, z: -0.08421683}
---- !u!1 &1978888575
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1978888577}
-  - component: {fileID: 1978888576}
-  m_Layer: 0
-  m_Name: BallSapwner T2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1978888576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1978888575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16b25cb9d3229f4459998afd9069d4d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballPrefab: {fileID: 5744937965556123132, guid: 7fea56f32c2e2094388de131be4fd4b0, type: 3}
-  ballCount: 20
-  tunnelRadius: 2
-  tunnelLength: 15
---- !u!4 &1978888577
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1978888575}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.0012751017, z: -0, w: 0.9999992}
-  m_LocalPosition: {x: -0.61731046, y: 2.1006775, z: 153.82462}
-  m_LocalScale: {x: 0.78079, y: 0.78079, z: 0.78079}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0.146, z: 0}
 --- !u!1001 &1997220644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15490,9 +15374,6 @@ SceneRoots:
   - {fileID: 1964191542}
   - {fileID: 153953907}
   - {fileID: 819098234}
-  - {fileID: 477442532}
-  - {fileID: 1978888577}
-  - {fileID: 1707278217}
   - {fileID: 1382327454}
   - {fileID: 1162654255}
   - {fileID: 2129274075}
