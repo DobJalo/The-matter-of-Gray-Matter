@@ -10043,11 +10043,11 @@ MonoBehaviour:
   lookSpeedX: 7
   lookSpeedY: 7
   cameraTransform: {fileID: 330585546}
-  plane1: {fileID: 0}
-  plane2: {fileID: 0}
-  plane3: {fileID: 0}
-  plane4: {fileID: 0}
-  plane5: {fileID: 0}
+  plane1: {fileID: 620888801}
+  plane2: {fileID: 1997220646}
+  plane3: {fileID: 376180253}
+  plane4: {fileID: 1450324670}
+  plane5: {fileID: 1967198578}
   ending: {fileID: 1589281843}
   MenuObject: {fileID: 1964191540}
   playerCamera: {fileID: 330585545}
@@ -11755,8 +11755,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1100.0001, y: -600.0007}
-  m_SizeDelta: {x: 150, y: 85}
+  m_AnchoredPosition: {x: 1100.0001, y: -620}
+  m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1389435401
 MonoBehaviour:
@@ -11778,7 +11778,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 1926151730, guid: ecd3b2ed3d7db4e468a811708c92cc0a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
