@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Wind : MonoBehaviour
 {
-    public float pushForce = 4f; 
+    private float pushForce = 4f; 
     public Vector3 windDirection = Vector3.left;
 
     private void OnTriggerStay(Collider other)
