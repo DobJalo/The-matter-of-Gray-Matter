@@ -5,14 +5,18 @@ using UnityEngine.SceneManagement;
 public class Settings : MonoBehaviour
 {
     [Header("UI")]
+    public Slider musicSlider;
     public Slider volumeSlider;
     public Slider sensitivitySlider;
 
     [Header("Audio Sources")]
     public AudioSource[] audioSources; 
+    public AudioSource musicAudioSource;
+
 
     [Header("Settings")]
     private const string VolumeKey = "Volume";
+    private const string MusicKey = "Music";
     private const string SensitivityKey = "MouseSensitivity";
     private const int SensitivityInteger = 7;
 
@@ -26,6 +30,15 @@ public class Settings : MonoBehaviour
         {
             volumeSlider.value = savedVolume;
             volumeSlider.onValueChanged.AddListener(OnVolumeChanged);
+        }
+
+
+        float savedMusic = PlayerPrefs.GetFloat(MusicKey, 1f);
+        ApplyVolumeToAllSources(savedMusic);
+        if (musicSlider != null)
+        {
+            musicSlider.value = savedMusic;
+            musicSlider.onValueChanged.AddListener(OnMusicChanged);
         }
 
 
@@ -44,14 +57,28 @@ public class Settings : MonoBehaviour
         ApplyVolumeToAllSources(value);
     }
 
+    void OnMusicChanged(float value)
+    {
+        PlayerPrefs.SetFloat(MusicKey, value);
+        PlayerPrefs.Save();
+        ApplyVolumeToAllSources(value);
+    }
+
     void ApplyVolumeToAllSources(float volume)
     {
         foreach (AudioSource source in audioSources)
         {
-            if (source != null)
+            if (source != null && !source.gameObject.CompareTag("musicAudio"))
+            {
                 source.volume = volume;
+            }
+            else if (source != null && source.gameObject.CompareTag("musicAudio"))
+            {
+                musicAudioSource.volume = volume;
+            }
         }
     }
+
 
     void OnSensitivityChanged(float value)
     {
