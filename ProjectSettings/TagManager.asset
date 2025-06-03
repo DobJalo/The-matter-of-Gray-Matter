@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - ground
+  - musicAudio
   layers:
   - Default
   - TransparentFX
