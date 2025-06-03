@@ -82,12 +82,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             speed = 5; //change speed
-            playerCamera.fieldOfView = 64; //change camera view while running (inform player about running through the visuals)
+            playerCamera.fieldOfView = 100; //change camera view while running (inform player about running through the visuals)
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             speed = 2;
-            playerCamera.fieldOfView = 60;
+            playerCamera.fieldOfView = 95.4f;
         }
 
         //Jumping

@@ -22,9 +22,8 @@ public class Settings : MonoBehaviour
 
     void Start()
     {
-
         float savedVolume = PlayerPrefs.GetFloat(VolumeKey, 1f);
-        ApplyVolumeToAllSources(savedVolume);
+        ApplyGeneralVolume(savedVolume);
 
         if (volumeSlider != null)
         {
@@ -32,15 +31,14 @@ public class Settings : MonoBehaviour
             volumeSlider.onValueChanged.AddListener(OnVolumeChanged);
         }
 
-
         float savedMusic = PlayerPrefs.GetFloat(MusicKey, 1f);
-        ApplyVolumeToAllSources(savedMusic);
+        ApplyMusicVolume(savedMusic);
+
         if (musicSlider != null)
         {
             musicSlider.value = savedMusic;
             musicSlider.onValueChanged.AddListener(OnMusicChanged);
         }
-
 
         float savedSensitivity = PlayerPrefs.GetFloat(SensitivityKey, 2f * SensitivityInteger);
         if (sensitivitySlider != null)
@@ -54,28 +52,32 @@ public class Settings : MonoBehaviour
     {
         PlayerPrefs.SetFloat(VolumeKey, value);
         PlayerPrefs.Save();
-        ApplyVolumeToAllSources(value);
+        ApplyGeneralVolume(value);
     }
 
     void OnMusicChanged(float value)
     {
         PlayerPrefs.SetFloat(MusicKey, value);
         PlayerPrefs.Save();
-        ApplyVolumeToAllSources(value);
+        ApplyMusicVolume(value);
     }
 
-    void ApplyVolumeToAllSources(float volume)
+    void ApplyGeneralVolume(float volume)
     {
         foreach (AudioSource source in audioSources)
         {
-            if (source != null && !source.gameObject.CompareTag("musicAudio"))
+            if (source != null && source != musicAudioSource)
             {
                 source.volume = volume;
             }
-            else if (source != null && source.gameObject.CompareTag("musicAudio"))
-            {
-                musicAudioSource.volume = volume;
-            }
+        }
+    }
+
+    void ApplyMusicVolume(float volume)
+    {
+        if (musicAudioSource != null)
+        {
+            musicAudioSource.volume = volume;
         }
     }
 
