@@ -30,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        speed = 2;
+
         rb = GetComponent<Rigidbody>(); // Get Rigidbody component from Player
 
         //start position (checkpoints)
