@@ -12986,6 +12986,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8a2becc97fc2aaf4d962f13da9a88c1f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ae2271ab36deeb247b12087bf3a729c5, type: 2}
     - target: {fileID: 919132149155446097, guid: 8a2becc97fc2aaf4d962f13da9a88c1f, type: 3}
       propertyPath: m_Name
       value: 'Greentunnels '
