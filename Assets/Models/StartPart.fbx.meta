@@ -3,7 +3,12 @@ guid: 1c4889209b9d48e42a5d8c940270bd35
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Star Cilinder_
+    second: {fileID: 2100000, guid: f4ebc99e85bc8a4408528ca02178e6b0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
