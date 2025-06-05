@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 47affa626bb23f148aa34a8f9db8b30b
+guid: 1c4889209b9d48e42a5d8c940270bd35
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: SmallBrain
-    second: {fileID: 2100000, guid: b205189fc96a3d44a95869f264a8043b, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
