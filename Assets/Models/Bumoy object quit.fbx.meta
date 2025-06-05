@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ab1e27f49379dcb46a05b9e4faa82527
+guid: 633a95fec59e05b4587af33a0c5c5fa5
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,7 +7,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Scaleitoscop Pink_
+      name: Material
     second: {fileID: 2100000, guid: 7a89b30f03f95c841bb9742378df14ec, type: 2}
   materials:
     materialImportMode: 2
