@@ -9,6 +9,7 @@ public class Checkpoints : MonoBehaviour
     public GameObject plane3;
     public GameObject plane4;
     public GameObject plane5;
+    public GameObject plane6;
     public GameObject ending;
     public GameObject backToMenu;
     public GameObject deathScreen;
@@ -42,10 +43,14 @@ public class Checkpoints : MonoBehaviour
         }
         if (Input.GetKey("6") && Input.GetKey(KeyCode.LeftShift))
         {
+            player.transform.position = new Vector3(plane6.transform.position.x, plane6.transform.position.y + 2, plane6.transform.position.z);
+        }
+        if (Input.GetKey("7") && Input.GetKey(KeyCode.LeftShift))
+        {
             player.transform.position = new Vector3(ending.transform.position.x, ending.transform.position.y + 2, ending.transform.position.z);
         }
         //deletes the information about checkpoint saves
-        if (Input.GetKey("7") && Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey("8") && Input.GetKey(KeyCode.LeftShift))
         {
             PlayerPrefs.DeleteKey("Checkpoint");
             Debug.Log("Checkpoints were deleted");
@@ -107,6 +112,11 @@ public class Checkpoints : MonoBehaviour
 
             }
             if (PlayerPrefs.GetInt("Checkpoint") == 5)
+            {
+                other.gameObject.transform.position = new Vector3(plane6.transform.position.x, plane6.transform.position.y + 3, plane6.transform.position.z);
+
+            }
+            if (PlayerPrefs.GetInt("Checkpoint") == 6)
             {
                 other.gameObject.transform.position = new Vector3(ending.transform.position.x, ending.transform.position.y + 3, ending.transform.position.z);
 
