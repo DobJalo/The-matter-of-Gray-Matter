@@ -16,6 +16,11 @@ public class Checkpoints : MonoBehaviour
 
     public bool backToMenuBool = false;
 
+    private void Start()
+    {
+        HideCursor();
+    }
+
     void Update()
     {
         //quick switch between checkpoints
@@ -63,9 +68,11 @@ public class Checkpoints : MonoBehaviour
         {
             backToMenu.SetActive(true); //show pause menu
             backToMenuBool = true; //this variable helps to prevent pause menu opening and closing all the time when Escape is pressed 
+            ShowCursor();
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && backToMenuBool == true)
         {
+            HideCursor();
             backToMenu.SetActive(false); //hide pause menu
             backToMenuBool = false;
         }
@@ -76,6 +83,7 @@ public class Checkpoints : MonoBehaviour
     {
         backToMenu.SetActive(false);
         backToMenuBool = false;
+        HideCursor();
     }
     public void BackToMenu() //to main menu
     {
@@ -122,5 +130,17 @@ public class Checkpoints : MonoBehaviour
 
             }
         }
+    }
+
+
+    void ShowCursor()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+    void HideCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
