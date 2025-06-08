@@ -42,8 +42,6 @@ public class Scoresystem : MonoBehaviour
 
     void Start()
     {
-        cam = GetComponent<Camera>();
-
         LoadResults();
 
         timer = PlayerName.timer; // get timer value from static variable from another script
