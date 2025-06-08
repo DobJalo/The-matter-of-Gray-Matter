@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 4;
+    private float speed = 5;
     public float lookSpeedX = 2f;
     public float lookSpeedY = 2f;
 
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
 
-        speed = 4;
+        speed = 5;
 
         rb = GetComponent<Rigidbody>(); // Get Rigidbody component from Player
 
@@ -94,12 +94,12 @@ public class PlayerMovement : MonoBehaviour
         //Running
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            speed = 7; //change speed
+            speed = 8; //change speed
             playerCamera.fieldOfView = 100; //change camera view while running (inform player about running through the visuals)
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            speed = 4;
+            speed = 5;
             playerCamera.fieldOfView = 95.4f;
         }
 
