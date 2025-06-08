@@ -91,6 +91,7 @@ public class Checkpoints : MonoBehaviour
  
     public void CloseMenu() //close pause menu
     {
+        stopTimer = false;
         backToMenu.SetActive(false);
         backToMenuBool = false;
         HideCursor();
