@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject plane4;
     public GameObject plane5;
     public GameObject plane6;
+    public GameObject plane7;
     public GameObject ending;
 
     public GameObject MenuObject;
@@ -61,6 +62,10 @@ public class PlayerMovement : MonoBehaviour
                 this.gameObject.transform.position = new Vector3(plane6.transform.position.x, plane6.transform.position.y + 2, plane6.transform.position.z);
             }
             if (PlayerPrefs.GetInt("Checkpoint") == 6)
+            {
+                this.gameObject.transform.position = new Vector3(plane7.transform.position.x, plane7.transform.position.y + 2, plane7.transform.position.z);
+            }
+            if (PlayerPrefs.GetInt("Checkpoint") == 7)
             {
                 this.gameObject.transform.position = new Vector3(ending.transform.position.x, ending.transform.position.y + 2, ending.transform.position.z);
             }

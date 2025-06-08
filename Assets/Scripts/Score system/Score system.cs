@@ -16,6 +16,8 @@ public class Scoresystem : MonoBehaviour
 
     private bool stopTime = false;
 
+    public Camera cam;
+
     //checkpoint:
     private const string CheckpointKey = "Checkpoint";
 
@@ -37,6 +39,8 @@ public class Scoresystem : MonoBehaviour
 
     void Start()
     {
+        cam = GetComponent<Camera>();
+
         LoadResults();
 
         timer = PlayerName.timer; // get timer value from static variable from another script
@@ -100,6 +104,7 @@ ShowResults();
     void ShowResults()
 {
     resultsPanel.SetActive(true); // show panel with results
+        cam.farClipPlane = 1000;
 
     allPlayersResults.Sort((a, b) => a.time.CompareTo(b.time)); // sort list based on players' time
 
