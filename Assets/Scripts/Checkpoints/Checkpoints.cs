@@ -17,9 +17,12 @@ public class Checkpoints : MonoBehaviour
 
     public bool backToMenuBool = false;
 
+    public bool stopTimer = false;
+
     private void Start()
     {
         HideCursor();
+        stopTimer = false;
     }
 
     void Update()
@@ -71,12 +74,14 @@ public class Checkpoints : MonoBehaviour
         //pause menu (opens on pressing Escape)
         if (Input.GetKeyDown(KeyCode.Escape) && backToMenuBool==false)
         {
+            stopTimer = true;
             backToMenu.SetActive(true); //show pause menu
             backToMenuBool = true; //this variable helps to prevent pause menu opening and closing all the time when Escape is pressed 
             ShowCursor();
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && backToMenuBool == true)
         {
+            stopTimer = false;
             HideCursor();
             backToMenu.SetActive(false); //hide pause menu
             backToMenuBool = false;

@@ -5598,6 +5598,7 @@ MonoBehaviour:
   resultsPanel: {fileID: 700766797}
   resultsText: {fileID: 1276283244}
   cam: {fileID: 330585545}
+  Checkpoints_switch: {fileID: 1964191540}
 --- !u!65 &121857091
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22140,6 +22141,7 @@ MonoBehaviour:
   backToMenu: {fileID: 2053494490}
   deathScreen: {fileID: 1588640137}
   backToMenuBool: 0
+  stopTimer: 0
 --- !u!4 &1964191542
 Transform:
   m_ObjectHideFlags: 0

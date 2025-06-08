@@ -18,6 +18,9 @@ public class Scoresystem : MonoBehaviour
 
     public Camera cam;
 
+    public GameObject Checkpoints_switch;
+    private bool stopTimer;
+
     //checkpoint:
     private const string CheckpointKey = "Checkpoint";
 
@@ -50,7 +53,9 @@ public class Scoresystem : MonoBehaviour
 
     void Update()
     {
-        if (timerRunning && !stopTime) // if timer still running
+        stopTimer = Checkpoints_switch.GetComponent<Checkpoints>().stopTimer;
+
+        if (timerRunning && !stopTime && stopTimer==false) // if timer still running
         {
             timer += Time.deltaTime; // add time
 
