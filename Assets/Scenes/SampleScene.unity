@@ -16879,7 +16879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dd112ec64c6a94381071ee252ca3ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpoint: {fileID: 2129115428}
+  checkpoint: {fileID: 825285457}
   deathScreen: {fileID: 1588640137}
 --- !u!65 &1017346711
 BoxCollider:
@@ -20021,7 +20021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dd112ec64c6a94381071ee252ca3ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpoint: {fileID: 2129115428}
+  checkpoint: {fileID: 825285457}
   deathScreen: {fileID: 1588640137}
 --- !u!65 &1387152013
 BoxCollider:
@@ -21614,7 +21614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dd112ec64c6a94381071ee252ca3ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpoint: {fileID: 2129115428}
+  checkpoint: {fileID: 825285457}
   deathScreen: {fileID: 1588640137}
 --- !u!65 &1569979367
 BoxCollider:
@@ -22881,7 +22881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58dd112ec64c6a94381071ee252ca3ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpoint: {fileID: 2129115428}
+  checkpoint: {fileID: 825285457}
   deathScreen: {fileID: 1588640137}
 --- !u!65 &1689312629
 BoxCollider:
