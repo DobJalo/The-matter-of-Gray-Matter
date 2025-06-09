@@ -18500,6 +18500,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1515926647}
     m_Modifications:
     - target: {fileID: 97133365494615081, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 97133365494615081, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -18567,6 +18571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser_cheat prevention
       objectReference: {fileID: 0}
+    - target: {fileID: 5777839110524374219, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6306361277713293371, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: m_LocalScale.x
       value: 27.759314
@@ -18627,6 +18635,10 @@ PrefabInstance:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1588640137}
+    - target: {fileID: 8559771861729475890, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
