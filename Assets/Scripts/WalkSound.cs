@@ -1,6 +1,6 @@
 using UnityEngine;
 
-
+//Footstep sounds will be triggered whenever the player is pressing one of the walking buttons (W,A,S,D) ((please please please work))
 
 public class footsteps : MonoBehaviour
 
