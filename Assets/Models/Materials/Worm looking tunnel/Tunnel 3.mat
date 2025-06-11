@@ -144,7 +144,7 @@ Material:
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _BumpScale: 2.13
+    - _BumpScale: 8
     - _BumpScale_2: 2.29
     - _CAMERA_TEXTURE_MODE: 0
     - _CastShadows: 1
@@ -167,7 +167,7 @@ Material:
     - _GlossyReflections: 0
     - _IridescentFlowSpeed: 2
     - _IridescentStrength: 0.54
-    - _Metallic: 0.426
+    - _Metallic: 0.534
     - _Metallic_2: 0.218
     - _OcclusionStrength: 1
     - _OcclusionStrength_2: 1
@@ -177,7 +177,7 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _RefractiveIndex: 25
-    - _Smoothness: 0.501
+    - _Smoothness: 0.447
     - _SmoothnessTextureChannel: 0
     - _Smoothness_2: 0.493
     - _SpecularHighlights: 1
@@ -186,8 +186,8 @@ Material:
     - _Surface: 0
     - _USE_COLOR_RAMP_TEXTURE: 0
     - _UseEmission: 0
-    - _VoronoiAngleOffset: 10.4
-    - _VoronoiDensity: 37.1
+    - _VoronoiAngleOffset: 9.1
+    - _VoronoiDensity: 100
     - _VoronoiFalloff: 0.05
     - _VoronoiThickness: 0.697
     - _WorkflowMode: 1
