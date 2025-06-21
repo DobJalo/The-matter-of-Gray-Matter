@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//audio that will be triggered in the bridge with the wind, should only trigger when entering the wind zone (hopefully)
+
 public class WindZoneAudio : MonoBehaviour
 {
     public AudioSource windAudio;
