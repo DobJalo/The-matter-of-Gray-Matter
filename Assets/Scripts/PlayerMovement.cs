@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        playerCamera.farClipPlane = 50;
+        playerCamera.farClipPlane = 1000;
         speed = 5;
 
         rb = GetComponent<Rigidbody>(); // Get Rigidbody component from Player
