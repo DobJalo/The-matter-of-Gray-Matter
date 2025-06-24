@@ -109,7 +109,7 @@ Material:
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _BumpScale: 3.31
+    - _BumpScale: 0.6
     - _CAMERA_TEXTURE_MODE: 0
     - _CastShadows: 1
     - _ClearCoatMask: 0
@@ -129,15 +129,15 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _IridescentFlowSpeed: 2
-    - _IridescentStrength: 0.56
+    - _IridescentStrength: 0.22
     - _Metallic: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: -1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _RefractiveIndex: 25
-    - _Smoothness: 0.11
+    - _RefractiveIndex: 7.9
+    - _Smoothness: 0.101
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
