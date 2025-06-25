@@ -16893,8 +16893,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f14311f5e7be1a4468b3f81084fadf39, type: 3}
-  m_Resource: {fileID: 8300000, guid: f14311f5e7be1a4468b3f81084fadf39, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a5b0333935ef88e4ba850e5ab2742d97, type: 3}
+  m_Resource: {fileID: 8300000, guid: a5b0333935ef88e4ba850e5ab2742d97, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.163
   m_Pitch: 1
@@ -26459,7 +26459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.83396226, g: 0.69017947, b: 0.04877888, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -26469,7 +26469,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 175
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 175
@@ -27671,7 +27671,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
