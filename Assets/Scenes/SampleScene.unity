@@ -6846,7 +6846,7 @@ PrefabInstance:
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: checkpoint
       value: 
-      objectReference: {fileID: 2001589610}
+      objectReference: {fileID: 423727452}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -8730,6 +8730,7 @@ GameObject:
   - component: {fileID: 410087041}
   - component: {fileID: 410087040}
   - component: {fileID: 410087042}
+  - component: {fileID: 410087043}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -8791,7 +8792,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 20
-  m_ColorTemperature: 3573
+  m_ColorTemperature: 3995
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -8840,6 +8841,15 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!45 &410087043
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410087039}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1001 &423727451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9482,7 +9492,7 @@ PrefabInstance:
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: checkpoint
       value: 
-      objectReference: {fileID: 2001589610}
+      objectReference: {fileID: 1566945663}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -9857,7 +9867,7 @@ PrefabInstance:
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: checkpoint
       value: 
-      objectReference: {fileID: 2001589610}
+      objectReference: {fileID: 423727452}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -10925,7 +10935,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 101.2, y: 3, z: -275.7}
-  m_LocalScale: {x: 248.51245, y: 304.54053, z: 0.123799995}
+  m_LocalScale: {x: 248.51245, y: 277.1319, z: 0.123799995}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1339194286}
@@ -16213,7 +16223,7 @@ PrefabInstance:
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: checkpoint
       value: 
-      objectReference: {fileID: 2001589610}
+      objectReference: {fileID: 2129115428}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -16469,7 +16479,7 @@ PrefabInstance:
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: checkpoint
       value: 
-      objectReference: {fileID: 2001589610}
+      objectReference: {fileID: 423727452}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -17323,7 +17333,7 @@ PrefabInstance:
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: checkpoint
       value: 
-      objectReference: {fileID: 2001589610}
+      objectReference: {fileID: 423727452}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -17759,7 +17769,7 @@ PrefabInstance:
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: checkpoint
       value: 
-      objectReference: {fileID: 2001589610}
+      objectReference: {fileID: 446020509}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -20645,15 +20655,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6306361277713293371, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.48
+      value: 25.2
       objectReference: {fileID: 0}
     - target: {fileID: 6306361277713293371, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.40001
+      value: -21.71
       objectReference: {fileID: 0}
     - target: {fileID: 6306361277713293371, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 46.95
+      value: 46.53
       objectReference: {fileID: 0}
     - target: {fileID: 6306361277713293371, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20686,7 +20696,7 @@ PrefabInstance:
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: checkpoint
       value: 
-      objectReference: {fileID: 2001589610}
+      objectReference: {fileID: 825285457}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -20697,7 +20707,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5486080401974587414, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1794103073}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
 --- !u!4 &1036910468 stripped
@@ -22958,13 +22971,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.025
-  m_fontSizeBase: 0.025
+  m_fontSize: 90
+  m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -27572,7 +27585,7 @@ PrefabInstance:
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: checkpoint
       value: 
-      objectReference: {fileID: 2001589610}
+      objectReference: {fileID: 2129115428}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -28101,6 +28114,129 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769992148}
   m_CullTransparentMesh: 1
+--- !u!1 &1794103072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1794103073}
+  - component: {fileID: 1794103077}
+  - component: {fileID: 1794103076}
+  - component: {fileID: 1794103075}
+  - component: {fileID: 1794103074}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1794103073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794103072}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.030597547, y: 0.94109917, z: 0.09712577, w: 0.3224326}
+  m_LocalPosition: {x: 22.9, y: -6.19, z: 49.42}
+  m_LocalScale: {x: 13.962935, y: 2.687849, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1036910468}
+  m_LocalEulerAnglesHint: {x: -11.686, y: 142.146, z: 0.295}
+--- !u!114 &1794103074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794103072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58dd112ec64c6a94381071ee252ca3ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpoint: {fileID: 2129115428}
+  deathScreen: {fileID: 1588640137}
+--- !u!65 &1794103075
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794103072}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 0.4396595}
+  m_Center: {x: -1.4310947e-11, y: 2.9889957e-10, z: -0.0935763}
+--- !u!23 &1794103076
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794103072}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 0
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 95f45862aac151045a818d1c8a30c161, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1794103077
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794103072}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1809556937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28782,7 +28918,7 @@ PrefabInstance:
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: checkpoint
       value: 
-      objectReference: {fileID: 2001589610}
+      objectReference: {fileID: 39988088}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -30382,7 +30518,7 @@ PrefabInstance:
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: checkpoint
       value: 
-      objectReference: {fileID: 2001589610}
+      objectReference: {fileID: 1566945663}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -31215,7 +31351,7 @@ PrefabInstance:
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: checkpoint
       value: 
-      objectReference: {fileID: 2001589610}
+      objectReference: {fileID: 446020509}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -32232,7 +32368,7 @@ PrefabInstance:
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: checkpoint
       value: 
-      objectReference: {fileID: 2001589610}
+      objectReference: {fileID: 1566945663}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
