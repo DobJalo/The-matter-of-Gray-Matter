@@ -804,7 +804,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 166
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -842,7 +842,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.422
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -891,7 +891,7 @@ Transform:
   m_GameObject: {fileID: 1059880618}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 508, y: 145.2, z: -2.5}
+  m_LocalPosition: {x: 466, y: 166.8, z: -2.5}
   m_LocalScale: {x: 2.44077, y: 2.44077, z: 2.44077}
   m_ConstrainProportionsScale: 0
   m_Children: []
