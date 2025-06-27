@@ -6848,6 +6848,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 423727452}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1588640137}
@@ -9494,6 +9498,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1566945663}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1588640137}
@@ -9659,6 +9667,10 @@ PrefabInstance:
       propertyPath: checkpoint
       value: 
       objectReference: {fileID: 2001589610}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -10228,6 +10240,10 @@ PrefabInstance:
       propertyPath: checkpoint
       value: 
       objectReference: {fileID: 423727452}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -16585,6 +16601,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2129115428}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1588640137}
@@ -16840,6 +16860,10 @@ PrefabInstance:
       propertyPath: checkpoint
       value: 
       objectReference: {fileID: 423727452}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -17698,6 +17722,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 423727452}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1588640137}
@@ -18134,6 +18162,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 446020509}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1588640137}
@@ -18382,6 +18414,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2cda4d79ee940564a9e274cb07494940, type: 3}
       insertIndex: -1
       addedObject: {fileID: 825285462}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2cda4d79ee940564a9e274cb07494940, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 825285466}
   m_SourcePrefab: {fileID: 100100000, guid: 2cda4d79ee940564a9e274cb07494940, type: 3}
 --- !u!1 &825285457 stripped
 GameObject:
@@ -18414,6 +18449,103 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.24, y: 3.51, z: 3.86}
   m_Center: {x: 0.013057123, y: -0.08421719, z: -0.0000023842522}
+--- !u!82 &825285466
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825285457}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c48a972d3d024c2408a3331750786a29, type: 3}
+  m_Resource: {fileID: 8300000, guid: c48a972d3d024c2408a3331750786a29, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 1
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -21166,6 +21298,10 @@ PrefabInstance:
       propertyPath: checkpoint
       value: 
       objectReference: {fileID: 825285457}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -23954,6 +24090,10 @@ PrefabInstance:
       propertyPath: checkpoint
       value: 
       objectReference: {fileID: 2001589610}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -28067,6 +28207,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2129115428}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1588640137}
@@ -29406,6 +29550,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 39988088}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1588640137}
@@ -29436,8 +29584,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ab297b593498a6e47ba84de770477cbe, type: 3}
-  m_Resource: {fileID: 8300000, guid: ab297b593498a6e47ba84de770477cbe, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -30091,6 +30239,10 @@ PrefabInstance:
       propertyPath: checkpoint
       value: 
       objectReference: {fileID: 2001589610}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -31208,6 +31360,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1566945663}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1588640137}
@@ -32040,6 +32196,10 @@ PrefabInstance:
       propertyPath: checkpoint
       value: 
       objectReference: {fileID: 446020509}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
@@ -33057,6 +33217,10 @@ PrefabInstance:
       propertyPath: checkpoint
       value: 
       objectReference: {fileID: 1566945663}
+    - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
     - target: {fileID: 7488260969374279951, guid: d86c091d9fc4c7143aa8336e32a4231c, type: 3}
       propertyPath: deathScreen
       value: 
