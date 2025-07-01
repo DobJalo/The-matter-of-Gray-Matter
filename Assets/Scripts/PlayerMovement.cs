@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
     public float lookSpeedX = 2f;
     public float lookSpeedY = 2f;
 
+    private bool reversecontrols = false;
+
     public Transform cameraTransform;
     private Rigidbody rb;
     private float xRotation = 0f;
@@ -82,11 +84,30 @@ public class PlayerMovement : MonoBehaviour
     {
         // Player movement
         //controls are reversed on purpose 
-        float moveX = -Input.GetAxis("Horizontal");
-        float moveZ = -Input.GetAxis("Vertical");
+        if (Input.GetKeyDown(KeyCode.M) && reversecontrols == false)
+        {
+            reversecontrols = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.M) && reversecontrols == true)
+        {
+            reversecontrols = false;
+        }
+        if ((reversecontrols) == false)
+        {
+            float moveX = -Input.GetAxis("Horizontal");
+            float moveZ = -Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * moveX + transform.forward * moveZ;
-        rb.MovePosition(rb.position + move * speed * Time.fixedDeltaTime);
+            Vector3 move = transform.right * moveX + transform.forward * moveZ;
+            rb.MovePosition(rb.position + move * speed * Time.fixedDeltaTime);
+        }
+        if ((reversecontrols) == true)
+        {
+            float moveX = Input.GetAxis("Horizontal");
+            float moveZ = Input.GetAxis("Vertical");
+
+            Vector3 move = transform.right * moveX + transform.forward * moveZ;
+            rb.MovePosition(rb.position + move * speed * Time.fixedDeltaTime);
+        }
     }
 
     void Update()
