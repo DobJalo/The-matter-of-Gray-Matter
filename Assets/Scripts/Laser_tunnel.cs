@@ -3,24 +3,36 @@ using UnityEngine;
 public class Laser_tunnel : MonoBehaviour
 {
     public GameObject lasers;
-    private float time=1f;
+    public AudioClip laserOnSound;           // Drag your laser sound clip here in the Inspector
+    private AudioSource audioSource;
+    private float time = 1f;
 
     private void Start()
     {
-        Invoke("LasersOn", time); // starts LaserOn in "time" seconds (float "time" is 1 second)
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        Invoke("LasersOn", time);
     }
 
     void LasersOn()
     {
-        lasers.SetActive(true); // show lasers
-        Invoke("LasersOff", time); // starts LasersOff in "time" seconds (float "time" is 1 second)
+        lasers.SetActive(true);
+
+        if (laserOnSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(laserOnSound);
+        }
+
+        Invoke("LasersOff", time);
     }
 
     void LasersOff()
     {
-        lasers.SetActive(false); // hide lasers
-        Invoke("LasersOn", time); // starts LaserOn in "time" seconds (float "time" is 1 second)
+        lasers.SetActive(false);
+        Invoke("LasersOn", time);
     }
-
-    //the process repeats all the time during the game
 }
